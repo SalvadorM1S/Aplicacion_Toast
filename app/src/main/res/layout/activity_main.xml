@@ -6,63 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/edtCorreo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="113dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/app_name"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        android:textColorHint="#757575"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <EditText
-        android:id="@+id/edtPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="114dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtCorreo"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:autofillHints="" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="105dp"
-        android:layout_height="116dp"
-        android:layout_marginTop="68dp"
-        android:contentDescription="@string/imagen"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?android:attr/fingerprintAuthDrawable" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_camara"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="185dp"
-        android:onClick="clickBon"
-        android:text="@string/button"
+        android:layout_marginTop="60dp"
+        android:onClick="onClick"
+        android:text="@string/camara"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
